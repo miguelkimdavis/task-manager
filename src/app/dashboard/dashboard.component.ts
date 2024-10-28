@@ -73,13 +73,11 @@ export class DashboardComponent implements OnInit {
   }
 
   private fetchAllTasks() {
-    this.taskService.getTask().subscribe({next: (tasks) => {
-      console.log(tasks);
-      this.tasks = tasks;
-    },error:(error)=>{
-      this.errorMessage = error.message;
-    }
-  });
+    this.taskService.getTask()
+    .subscribe((task)=>{
+      console.log(task);
+      this.tasks = task;
+    })
   }
 
   ngOnInit(): void {

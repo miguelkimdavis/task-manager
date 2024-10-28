@@ -38,7 +38,7 @@ export class TaskService {
 
   }
   updateTask(id:string|undefined,data:Task){
-    this.http.put('https://myangularhttpclient-default-rtdb.firebaseio.com/tasks/'+id+'.json',data)
+    this.http.put(`https://myangularhttpclient-default-rtdb.firebaseio.com/tasks/${id}.json`,data)
     .subscribe()
   }
 }

@@ -21,6 +21,7 @@
 <hr>
 
     <div class="dashboard-item-container">
+        <div class="sb sb-error">{{errorMessage}}</div>
         <div [ngStyle]="{'text-align':'center','color':'red'}" *ngIf="tasks.length < 1">
             <h2>NO TASK HAS BEEN CREATED YET</h2>
         </div>

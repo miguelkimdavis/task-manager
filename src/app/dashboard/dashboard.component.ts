@@ -58,8 +58,6 @@ export class DashboardComponent implements OnInit {
     this.showCreateTaskForm = false;
   }
 
-  constructor(private http: HttpClient, private taskService: TaskService) {}
-
   createorUpdateTask(data: Task) {
     
     this.CloseCreateTaskForm();
@@ -80,6 +78,8 @@ export class DashboardComponent implements OnInit {
     })
   }
 
+  constructor(private http: HttpClient, private taskService: TaskService) {}
+  
   ngOnInit(): void {
     this.fetchAllTasks();
   }

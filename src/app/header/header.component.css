@@ -5,18 +5,12 @@ header{
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
-a{
-    text-decoration: none;
-    color: white;
-    margin: 0px 10px;
-    font-weight: bold;
-}
-.header-logo{
+
+.header-container{
     padding: 1% 5%;
     width: 30%;
 }
-.header-nav{
-    padding: 20px 20px;
-    width: 70%;
-    text-align: right;
+
+.header-container h2{
+    text-align: center;
 }

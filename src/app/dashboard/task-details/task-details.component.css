@@ -149,7 +149,7 @@
   .form button:hover {
     background: rgb(88, 56, 250);
   }
-  /*Responsive*/
+
   @media screen and (max-width: 500px) {
     .form .column {
       flex-wrap: wrap;
